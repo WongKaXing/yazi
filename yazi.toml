@@ -1,3 +1,10 @@
+[manager]
+sort_by         = "alphabetical"
+sort_dir_first  = true
+sort_sensitive  = false
+sort_reverse    = false
+sort_translit   = true
+
 [shell]
 shell = "zsh"
 
