@@ -1,4 +1,7 @@
-[manager]
+[mgr]
+linemode        = "size"
+ratio           = [2,4,4]
+show_hidden     = true
 sort_by         = "alphabetical"
 sort_dir_first  = true
 sort_sensitive  = false
@@ -9,6 +12,27 @@ sort_translit   = true
 shell = "zsh"
 
 [tasks]
-micro_workers = 5
-macro_workers = 10
 bizarre_retry = 5
+macro_workers = 10
+micro_workers = 5
+
+[preview]
+max_width     = 1400
+max_height    = 1200
+
+[input]
+cursor_blink  = true
+
+####################### plugin #######################
+# yazi config 
+[[plugin.prepend_fetchers]]
+# id    = "git" # Remove if Yazi > v26.1.22
+url   = "*"
+run   = "git"
+group = "git"
+
+# exif-image
+[plugin]
+prepend_previewers = [
+  { mime = "image/*", run = "exif-image" }
+]

@@ -44,3 +44,22 @@ desc = "Move in relative steps"
 on = [ "9" ]
 run = "plugin relative-motions 9"
 desc = "Move in relative steps"
+
+#################### plugin ####################
+
+# lazygit 插件配置
+[[mgr.prepend_keymap]]
+on   = [ "g", "i" ]
+run  = "plugin lazygit"
+desc = "run lazygit"
+
+# exif-image 图片信息查看
+[[mgr.prepend_keymap]]
+on   = [ "<C-j>" ]
+run  = "plugin exif-image 1"
+desc = "Metadata next page"
+
+[[mgr.prepend_keymap]]
+on   = [ "<C-k>" ]
+run  = "plugin exif-image -1"
+desc = "Metadata prev page"
