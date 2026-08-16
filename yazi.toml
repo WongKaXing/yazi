@@ -24,7 +24,7 @@ max_height    = 1200
 cursor_blink  = true
 
 ####################### plugin #######################
-# yazi config 
+# yazi config
 [[plugin.prepend_fetchers]]
 # id    = "git" # Remove if Yazi > v26.1.22
 url   = "*"
