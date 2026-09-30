@@ -76,3 +76,29 @@ desc = "元数据下一页"
 on   = [ "<C-k>" ]
 run  = "plugin exif-image -1"
 desc = "元数据上一页"
+
+# compress 压缩插件（KKV9/compress）
+[[mgr.prepend_keymap]]
+on   = [ "c", "a", "a" ]
+run  = "plugin compress"
+desc = "压缩选中文件为归档"
+
+[[mgr.prepend_keymap]]
+on   = [ "c", "a", "p" ]
+run  = "plugin compress -p"
+desc = "压缩并设置密码 (zip/7z/rar)"
+
+[[mgr.prepend_keymap]]
+on   = [ "c", "a", "h" ]
+run  = "plugin compress -ph"
+desc = "压缩并加密文件头 (7z/rar)"
+
+[[mgr.prepend_keymap]]
+on   = [ "c", "a", "l" ]
+run  = "plugin compress -l"
+desc = "压缩并选择压缩等级"
+
+[[mgr.prepend_keymap]]
+on   = [ "c", "a", "u" ]
+run  = "plugin compress -phl"
+desc = "压缩 (密码+文件头+等级)"

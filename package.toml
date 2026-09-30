@@ -38,6 +38,11 @@ use = "yozlog/exif-image"
 rev = "65a0fdb"
 hash = "f2736dd4299eac7ed01a8ed5dedaf020"
 
+[[plugin.deps]]
+use = "KKV9/compress"
+rev = "80e5268"
+hash = "868db729374b97871bc30b96d0e9061f"
+
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-mocha"
 rev = "0f9204b"
