@@ -1,11 +1,5 @@
 -- yatline 这是第一个用于自定义头行和状态行的Yazi插件
 
--- 定义一个返回苹果图标的函数
-local function apple()
-	-- 在单引号或双引号之间，直接粘贴你想要的Nerd Fonts苹果图标字符
-	return "" -- 这是 Font Awesome 的图标，你可以替换成其他的
-end
-
 require("yatline"):setup({
 	section_separator = { open = "", close = "" },
 	part_separator = { open = "", close = "" },
@@ -54,12 +48,6 @@ require("yatline"):setup({
 		},
 		right = {
 			section_a = {
-				{ type = "string", custom = true, name = apple(), params = { " " } },
-			},
-			section_b = {
-				{ type = "string", custom = true, name = "soc" },
-			},
-			section_c = {
 				{
 					type = "coloreds",
 					custom = false,
