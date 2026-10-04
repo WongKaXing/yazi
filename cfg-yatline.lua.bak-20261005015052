@@ -9,19 +9,18 @@ end
 require("yatline"):setup({
 	section_separator = { open = "", close = "" },
 	part_separator = { open = "", close = "" },
-	-- 背景色已全部去掉：inverse 分隔符是「背景色块之间的圆角收尾」，无背景后失去意义，置空
-	inverse_separator = { open = "", close = "" },
+	inverse_separator = { open = "", close = "" },
 	padding = { inner = 1, outer = 1 },
 	style_a = {
-		fg = "#a89984",
+		fg = "black",
 		bg_mode = {
-			normal = "reset",
-			select = "reset",
-			un_set = "reset",
+			normal = "#a89984",
+			select = "#d79921",
+			un_set = "#d65d0e",
 		},
 	},
-	style_b = { fg = "#ebdbb2", bg = "reset" },
-	style_c = { fg = "#a89984", bg = "reset" },
+	style_b = { bg = "#665c54", fg = "#ebdbb2" },
+	style_c = { bg = "#3c3836", fg = "#a89984" },
 	permissions_t_fg = "green",
 	permissions_r_fg = "yellow",
 	permissions_w_fg = "red",
