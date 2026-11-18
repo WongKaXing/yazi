@@ -1,0 +1,104 @@
+# 插件
+# relative-motions  这是一个基于Vim动态的Yazi插件
+[[mgr.prepend_keymap]]
+on = [ "1" ]
+run = "plugin relative-motions 1"
+desc = "相对移动1步"
+
+[[mgr.prepend_keymap]]
+on = [ "2" ]
+run = "plugin relative-motions 2"
+desc = "相对移动2步"
+
+[[mgr.prepend_keymap]]
+on = [ "3" ]
+run = "plugin relative-motions 3"
+desc = "相对移动3步"
+
+[[mgr.prepend_keymap]]
+on = [ "4" ]
+run = "plugin relative-motions 4"
+desc = "相对移动4步"
+
+[[mgr.prepend_keymap]]
+on = [ "5" ]
+run = "plugin relative-motions 5"
+desc = "相对移动5步"
+
+[[mgr.prepend_keymap]]
+on = [ "6" ]
+run = "plugin relative-motions 6"
+desc = "相对移动6步"
+
+[[mgr.prepend_keymap]]
+on = [ "7" ]
+run = "plugin relative-motions 7"
+desc = "相对移动7步"
+
+[[mgr.prepend_keymap]]
+on = [ "8" ]
+run = "plugin relative-motions 8"
+desc = "相对移动8步"
+
+[[mgr.prepend_keymap]]
+on = [ "9" ]
+run = "plugin relative-motions 9"
+desc = "相对移动9步"
+
+#################### plugin ####################
+
+# 交换 z 和 f 的快捷键
+# z -> zoxide (跳转目录)
+[[mgr.prepend_keymap]]
+on   = [ "z" ]
+run  = "plugin zoxide"
+desc = "使用 zoxide 跳转目录"
+
+# f -> fzf (查找文件)
+[[mgr.prepend_keymap]]
+on   = [ "f" ]
+run  = "plugin fzf"
+desc = "使用 fzf 查找文件"
+
+# lazygit 插件配置
+[[mgr.prepend_keymap]]
+on   = [ "g", "i" ]
+run  = "plugin lazygit"
+desc = "启动 lazygit"
+
+# exif-image 图片信息查看
+[[mgr.prepend_keymap]]
+on   = [ "<C-j>" ]
+run  = "plugin exif-image 1"
+desc = "元数据下一页"
+
+[[mgr.prepend_keymap]]
+on   = [ "<C-k>" ]
+run  = "plugin exif-image -1"
+desc = "元数据上一页"
+
+# compress 压缩插件（KKV9/compress）
+[[mgr.prepend_keymap]]
+on   = [ "c", "a", "a" ]
+run  = "plugin compress"
+desc = "压缩选中文件为归档"
+
+[[mgr.prepend_keymap]]
+on   = [ "c", "a", "p" ]
+run  = "plugin compress -p"
+desc = "压缩并设置密码 (zip/7z/rar)"
+
+[[mgr.prepend_keymap]]
+on   = [ "c", "a", "h" ]
+run  = "plugin compress -ph"
+desc = "压缩并加密文件头 (7z/rar)"
+
+[[mgr.prepend_keymap]]
+on   = [ "c", "a", "l" ]
+run  = "plugin compress -l"
+desc = "压缩并选择压缩等级"
+
+[[mgr.prepend_keymap]]
+on   = [ "c", "a", "u" ]
+run  = "plugin compress -phl"
+desc = "压缩 (密码+文件头+等级)"

@@ -1,0 +1,33 @@
+[mgr]
+linemode        = "size"
+ratio           = [2,4,4]
+show_hidden     = true
+sort_by         = "alphabetical"
+sort_dir_first  = true
+sort_sensitive  = false
+sort_reverse    = false
+sort_translit   = true
+
+[shell]
+shell = "zsh"
+
+[tasks]
+bizarre_retry = 5
+macro_workers = 10
+micro_workers = 5
+
+[preview]
+max_width     = 1400
+max_height    = 1200
+
+[input]
+cursor_blink  = true
+
+####################### plugin #######################
+# yazi config
+
+# exif-image
+[plugin]
+prepend_previewers = [
+  { mime = "image/*", run = "exif-image" }
+]
